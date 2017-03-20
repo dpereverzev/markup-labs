@@ -1,0 +1,157 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: url(img/body-bcg.gif) repeat; 
+}
+
+p {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 15px;
+}
+
+h1:first-of-type {
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  font-size: 11px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:link, :visited {
+  color: #000;
+}
+
+header {
+  height: 115px;
+  background: url(img/header-bcg.gif) repeat-y;
+}
+
+footer {
+  position: relative;
+  height: 124px;
+  background: #000 url(img/footer-bcg.gif) no-repeat bottom;
+}
+
+footer > img {
+  position: absolute;
+  top: 16px;
+  right: 37px;
+}
+
+.contacts {
+  position: absolute;
+  left: 27px;
+  top: 60px;
+  color: #fff;
+  font-size: 9px;
+}
+
+.logo {
+  display: block;
+  width: 267px;
+  margin: 0 auto;
+}
+
+.logo > img {
+  margin-top: 11px;
+}
+
+.container {
+  background: #fff;
+  margin: 0 auto;
+  width: 640px;
+  min-height: 100%;
+  font: 11px arial, sans-serif;
+}
+
+.main {
+  padding: 40px 0;
+  min-height: calc(100vh - 279px);
+}
+
+.main:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.aside {
+  float: left;
+  height: 100%;
+  width: 184px;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-left: 25px;
+}
+
+.aside a {
+  display: inline-block;
+}
+
+.aside__item:hover,
+.aside__active,
+.aside__item__nested:hover {
+  color: #a8141a;
+}
+
+.aside li + li {
+  margin-top: 15px;
+}
+
+.aside__item {
+  padding-left: 12px;
+  background: url(img/bullet-off.png) no-repeat 0 20%;
+}
+
+.aside__item:hover, .aside__item.aside__active {
+  background-image: url(img/bullet-on.png);
+}
+
+.aside__item__nested {
+  font-size: 9px;
+  margin-left: 12px;
+  padding-left: 10px;
+  background: url(img/bullet-off-small.png) no-repeat 0 30%;
+}
+
+.aside__item__nested:hover, .aside__item__nested.aside__active {
+  background-image: url(img/bullet-on-small.gif);
+}
+
+.text {
+  line-height: 16px;
+  float: right;
+  width: calc(100% - 184px);
+  box-sizing: border-box;
+  padding: 0 45px 0 12px;
+  background: url(img/border-dot.png) repeat-y left;
+}
